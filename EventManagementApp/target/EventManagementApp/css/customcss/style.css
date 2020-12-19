@@ -1,0 +1,612 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*----------------------------------index-----------------------------*/
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-size: 13px !important;
+    
+}
+.main-header {
+	background: #fff;
+	box-shadow: 4px 2px 5px rgba(0, 0, 0, 0.09);
+	padding: 95px 0;
+padding-bottom: 80px;
+background: rgb(229,229,229); 
+background: -moz-linear-gradient(top, rgba(229,229,229,1) 0%, rgba(255,255,255,1) 53%, rgba(255,255,255,1) 100%); 
+background: -webkit-linear-gradient(top, rgba(229,229,229,1) 0%,rgba(255,255,255,1) 53%,rgba(255,255,255,1) 100%);
+background: linear-gradient(to bottom, rgba(229,229,229,1) 0%,rgba(255,255,255,1) 53%,rgba(255,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#ffffff',GradientType=0 );
+    border-bottom: 7px solid #2d3b4b; 
+}
+
+
+/* .navbar {
+    border-radius: 0px !important;
+}
+ */
+.navbar-inverse .navbar-nav>li>a {
+    color: #efe9e9;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color:  #0e537b;
+}
+
+/* Sriparna css */
+/*  .logo-area a img {
+    max-width: 60px !important;
+	max-height: 62px !important; 
+	width: 200px;
+	    position: fixed;
+    top: 10%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -150px; 
+}
+ */
+ /* Tajinder 04-01-2018 */
+.logo-area a img {
+    /* width: 200px; */
+    height: 211px;
+    position: absolute;
+    /* top: 10%; */
+    left: 50%;
+    text-align: center;
+    margin-top: -50px;
+    margin-left: 406px;
+    align-items: center;
+    justify-content: center;
+}
+.logo-area-menu a img {
+	/* max-width: 100px !important;
+	max-height: 100px !important; */
+	width: 150px;
+}
+
+/*--------------------login------------------*/
+#login-wrapper {
+	min-height: 421px;
+	position: relative;
+	background-size: cover;
+}
+
+#login-wrapper small {
+	line-height: 1.5em;
+	padding: 15px 0 12px;
+	display: inline-block;
+}
+
+.login-middle {
+	max-width: 380px;
+	background: #fff;
+	border-radius: 5px;
+	padding: 29px;
+	padding-top: 25px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-height: 350px;
+	-webkit-box-shadow: 0 0 12px 6px rgba(0, 0, 0, 0.05), 0 3px 6px
+		rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 0 12px 6px rgba(0, 0, 0, 0.05), 0 3px 6px
+		rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0 12px 6px rgba(0, 0, 0, 0.05), 0 3px 6px
+		rgba(0, 0, 0, 0.15);
+}
+
+.login-middle .form-control {
+	height: 50px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 0;
+	font-size: 12px;
+}
+
+.login-middle .group {
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.login-middle input {
+	height: 39px;
+	padding: 0 15px;
+	display: block;
+	width: 100%;
+	border: none;
+	border: 1px solid #ccc;
+/* 	text-transform: uppercase; */
+}
+
+.log-panel .main-button {
+	display: inline-block;
+	float: none;
+	margin: 8px 0 0;
+	background: #23527c;
+	padding: 10px 0px;
+	border-color:#23527c;
+	box-shadow: none;
+	width: 100%;
+	font: 700 14px 'Montserrat', sans-serif;
+}
+
+.log-panel .main-button:hover {
+	background: #333;
+	border-color: #333;
+}
+
+.main-button {
+	background: #ef7341;
+	color: #fff;
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 13px;
+	font-weight: 500;
+	transition: box-shadow .2s ease;
+	vertical-align: super;
+	cursor: pointer;
+	outline: none;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+	border: 1px solid #e0e0e0;
+	text-transform: uppercase;
+	float: right;
+	margin-bottom: 15px;
+	border-radius: 3px;
+}
+
+.login-middle input:focus {
+	outline: none;
+}
+
+.login-middle .log-panel {
+	border-top: none;
+	padding: 8px 0 0;
+	margin-top: 2px;
+}
+
+.another-login {
+	text-align: center;
+}
+
+#login-wrapper .another-login small {
+	display: block;
+}
+
+
+
+/* form starting stylings ------------------------------- */
+.login-middle .group {
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.login-middle input {
+	font-size: 11px;
+	padding: 10px 10px 10px 5px;
+	display: block;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #ddd;
+}
+
+.login-middle textarea {
+	font-size: 11px;
+	padding: 10px 10px 10px 5px;
+	display: block;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #ddd;
+}
+
+.login-middle textarea:focus {
+	outline: none;
+}
+
+.login-middle input:focus {
+	outline: none;
+}
+/* LABEL ======================================= */
+.login-middle label {
+	color: #333;
+	/* font-family: 'Montserrat', sans-serif; */
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 11px;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: 5px;
+	top: 10px;
+	transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+.login-middle textarea:focus ~ label,.login-middle textarea:valid ~
+	label {
+	top: -10px;
+	font-size: 11px;
+	color: #ec9d18;
+}
+
+.login-middle input:focus ~ label,.login-middle input:valid ~ label {
+	top: -10px;
+	font-size: 11px;
+	color: rgb(222, 127, 7);
+}
+
+.middle-form .form-control {
+	border-radius: 0;
+	border: 1px solid #333;
+}
+.form-group {
+	margin-bottom: 6px !important;
+}
+.show-list{
+	/* font-family: sans-serif; */
+	
+}
+
+/* Sriparna css */
+.show-list>thead>tr>th{
+	font-size: 14px;
+	/* Tajinder 3-1-2018 */
+	background-color: rgb(0, 142, 183);
+	color:white;
+	/* Tajinder 3-1-2018 */
+	font-weight: 100;
+}
+
+
+
+/* 03-01-2018 starts*/  /*  Sriparna css */
+.custom-event-form-design .col-lg-4 {
+    /* text-align: right !important; */
+     margin-left: 100px;
+}
+.custom-event-form-design .col-lg-6 {
+    margin-left: -30px;
+}
+.formAlign .col-lg-6 {
+margin-left: -150px;
+}
+.selectEvent .col-lg-4{
+	margin-left: 15px;
+}
+/* 03-01-2018 ends*/
+
+
+
+
+.alert{
+display: none;
+}
+.btn-default-custom-style{
+	    padding: 2px 5px !important;
+	    font-size: 13px;
+}
+
+
+.check {
+    margin: 4px 29px 0;
+    position: absolute;
+}
+
+
+.form-control {
+     width: 100% !important;
+}
+
+
+
+
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
+     color:  #333;; 
+    background-color: #0e537b;
+    border-color: #ccc;
+}
+
+
+.btn-default {
+    color: #333;
+   /*  background-color: #d4d4d4; */
+    background-color: #f5f2f2;  /* Sriparna css */
+    border-color: #8c8c8c;
+    padding: 4px 4px 4px 4px;
+}
+
+
+.login-user-name{
+	 padding-top: 16px;
+	/* padding-top: 35px; */
+    font-size: 18px;
+    color: #0a4d6b;
+}
+ /* Sriparna css */
+.logout{
+	/* padding-left: 86px; */
+   /*  font-size: 16px;   
+    color: #0a4d6b; */
+     padding-left: 100px;  /* Sriparna css */
+     font-size: 13px;  /* Sriparna css */
+    
+}
+/* Sriparna css */
+.logout>a {
+	 color: #d22d10 !important;   /* Sriparna css */
+}
+
+
+.user-details-header{
+padding-left: 46px;
+}
+.navbar-nav .active{
+color: #fff !important;
+    background-color: #0e537b !important;
+}
+/* Tajinder 23-12-2017 */
+.uploadDiv{
+	margin-left: 13%;
+	width: 100%;
+}
+
+
+.upload-btn{
+	margin-left: 32px;
+    background: #0e537b;
+    width: 122px;
+    height: 40px;
+    color: white;
+}
+
+#show-list-table-div{
+	overflow-y:scroll!important;	
+	height: 300px;
+    overflow:auto;
+    white-space: nowrap;
+    /*  margin-bottom: 44px;  */  /* Sriparna css */
+} 
+
+.modal-content.cont{
+background :  #a4b9c5;
+margin-top: 250px;
+}
+
+.modal-footer.foot .btn+.btn{
+	color: #e2d0d0;
+    background-color: #0e537b;
+    border-color: #ccc;
+}
+.manadatory{
+	color: red;
+	font-size: 15px;
+}
+.form-control-feedback{
+    padding-top:0px !important;
+}
+
+/* Tajinder 27-12-2017 */
+.event-Upload{
+	margin-left: -204px;
+    width: 100%;
+    margin-top: 9px;
+}
+/* Sriparna 26-12-2017 */
+.radioStyle {
+   /*  margin: 4px 4px 0 !important;  */   /* 03-01-2018 */  /*   Sriparna css */
+    top: 5px !important;
+    line-height: normal;
+    /*   Sriparna css */
+    border: 1px solid #d6c2c2;  
+    padding: 3px;
+    left: 15px;
+    width: 120px;
+    border-radius: 4px;
+    /*   Sriparna css */
+}
+.custom-event-form-design .col-lg-7 { 
+   /*  text-align: right !important; */    /* 03-01-2018 */  /*   Sriparna css */
+    margin-left: 100px;                   /* 03-01-2018 */   /*   Sriparna css */
+}
+.feedback .has-feedback .form-control-feedback {
+    right: -15px;
+    top: -5px;
+}
+.radioStyle input[type=radio] {
+    margin: 4px 5px 0;   
+}
+
+.nav>li>a {
+    padding: 10px 8px !important;
+}
+
+.self-tab{
+   opacity: 0.9;
+   color: white;
+    cursor: pointer;
+    /* background-color: #f5f5f5; */
+    border-color: #ddd;
+   background: rgb(0, 142, 183);
+    background: -moz-linear-gradient(top, rgba(0, 142, 183, 1) 0%, rgba(0, 3, 51, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 142, 183, 1) 0%, rgba(0, 3, 51, 1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 142, 183, 1) 0%, rgba(0, 3, 51, 1) 100%);
+    
+    
+}
+.self-create{
+	margin-right: 30px;   
+    margin-bottom: 15px!important;
+}
+
+
+
+
+
+
+
+
+/* Sriparna css */
+.custom-tab{
+	 color: #1f1d1d !important;
+    background: #ccc6c6 !important;
+}
+
+
+
+/* Sriparna css */
+ 
+/* 03-01-2018 file upload button */
+.upload:after {
+    content: 'Choose File';
+    left: 100%;
+    top: -5.99px;
+    margin-left: -50px;
+    position: relative;
+    -webkit-appearance: button;
+    padding: 8px 11px 57px 13px;
+    border: 0px;
+    vertical-align: text-top;
+    vertical-align: middle;
+    margin-top: 0px;
+    padding-top: 9px;
+    padding-bottom: 2px;
+   /*  margin-bottom: -211px; */
+    /* margin: 0px unset; */
+}
+input[type=file]::-webkit-file-upload-button {
+    width: 0;
+    padding: 0;
+    margin: 0;
+    -webkit-appearance: none;
+    border: none;
+    border:0px;
+}
+
+ .dropdown-menu>li>a{
+	color: #f9f7f7;
+}
+ .cust-drop {
+	background-color: #191818;
+}  
+ .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    color: #fff !important;
+    background-color: #0e537b !important;
+} 
+
+/*************Tajinder ******************/
+
+.form-square {
+	border-radius: 0
+}
+
+.table-height{
+   height: 10px;
+}
+
+.custom-body{
+
+     padding: 0px!important; 
+    margin-top: 10px;
+}
+
+
+
+.custom-glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 100;
+    /* line-height: 1; */
+    line-height: 2.5;
+    font-size: 62%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Sriparna css */
+.footer {
+ /* position: fixed; */
+   left: 0;
+   bottom: 500px;
+   width: 100%;
+   /* background-color: #eae8e8; */
+   background-color: #222;
+   color: #efe9e9;
+  /*  color: black; */
+   text-align: center;
+   margin-top: 2px;
+}
+
+.owned-text{ font-size: 13px;
+   /*  color: #505050; */
+    color: #f9f5f5;
+    padding: 8px 0 0;
+        font-family: 'myriadpro';
+    font-weight: normal !important;
+    margin: 0 0 10px;
+    }
+
+.wrapper-space {
+    min-height: 450px;
+}
+
+.save-btn {
+    margin-left: 32px;
+    background: #0e537b;
+    width: 122px;
+    height: 40px;
+    color: white;
+}
+
+body {
+    font-size: 13px;
+}
+
+.recommend-text{
+    color: brown;
+    float: right;
+    margin-top: -22px;
+    margin-right: -245px;
+   }
+   
+   .carousel-caption {
+    left: 0 !important;
+    right: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%);
+}
+.cara-text {
+    float: right;
+    margin-right: -1%;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    width: 36%;
+}
+.slider-hdng {
+    font-family: 'HelveticaNeue-Regular';
+    font-size: 40px;
+    color: #fff;
+    line-height: 68px;
+}
+.slider-des {
+    font-family: 'HelveticaNeue-Regular';
+    font-size: 20px;
+    color: #fff;
+   line-height: 20px; 
+}
+/* Priyanka 08.01.2018 @Start*/
+.recommend-text-commaSepartor{
+    color: brown;
+    float: right;
+    margin-top: -22px;
+    margin-right: -245px;
+    padding-right: 383px;
+    padding-top: 25px;
+   }
+/* Priyanka 08.01.2018 @End*/
