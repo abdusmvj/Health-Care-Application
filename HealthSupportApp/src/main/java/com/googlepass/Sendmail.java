@@ -7,11 +7,11 @@ package com.googlepass;
 	// with HTML templates
 
 	import java.util.*;
-	import javax.mail.*;
-	import javax.mail.internet.*;
-	import javax.mail.Session;
-	import javax.mail.Transport;
-	import javax.activation.*; 
+	import jakarta.mail.*;
+	import jakarta.mail.internet.*;
+	import jakarta.mail.Session;
+	import jakarta.mail.Transport;
+	import jakarta.activation.*; 
 
 
 	public class Sendmail
