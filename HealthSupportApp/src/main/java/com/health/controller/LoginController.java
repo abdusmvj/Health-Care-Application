@@ -9,6 +9,7 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -25,7 +26,7 @@ public class LoginController {
 	
 	
 
-	@RequestMapping("/login")
+	@GetMapping("/login")
 	public String Welcome(HttpServletRequest request) {
 		System.out.println("hi Login Page----");
 		request.setAttribute("mode", "MODE_HOME");
@@ -65,7 +66,7 @@ public class LoginController {
 		
 	 }
 	
-	@RequestMapping("/userLogout")
+	@GetMapping("/userLogout")
 	public String logout(HttpServletRequest request) {
 		HttpSession session = request.getSession(false);
 		session.removeAttribute("user_password");

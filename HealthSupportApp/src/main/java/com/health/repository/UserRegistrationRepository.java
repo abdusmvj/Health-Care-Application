@@ -11,6 +11,6 @@ public interface UserRegistrationRepository extends CrudRepository<UserRegistrat
 
 	
 	
-	@Query(value = "SELECT e from UserRegistration e order by e.user_name ASC")
+	@Query(value = "SELECT e from UserRegistration e order by e.inst_name ASC")
       List<UserRegistration> getAllUserDetails();
 }

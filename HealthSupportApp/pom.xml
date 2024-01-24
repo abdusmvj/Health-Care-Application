@@ -10,7 +10,8 @@
 	</parent>
 	<groupId>com.health.app</groupId>
 	<artifactId>HealthSupportApp</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.4-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>HealthSupportApp</name>
 	<description>Health Organization Management</description>
 
@@ -52,11 +53,17 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web-services</artifactId>
 		</dependency>
+<!-- https://mvnrepository.com/artifact/javax.mail/javax.mail-api -->
+<dependency>
+   <groupId>com.sun.mail</groupId>
+            <artifactId>javax.mail</artifactId>
+            <version>1.6.2</version>
+    </dependency>
 
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.11</version>
+			
 		</dependency>
 <!-- 		//  start abdus added this dependency  -->
 

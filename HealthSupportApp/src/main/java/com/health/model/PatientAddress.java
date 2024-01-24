@@ -41,7 +41,7 @@ public class PatientAddress implements Serializable{
     
     
     @OneToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "refPatientDetailsId", nullable = false, unique = true)
+    @JoinColumn(name = "refPatientDetlsId", nullable = false, unique = true)
     private PatientDetails patientDetails;
 	
 	@CreationTimestamp

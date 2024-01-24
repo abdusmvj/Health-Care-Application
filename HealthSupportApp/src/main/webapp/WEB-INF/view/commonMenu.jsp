@@ -12,23 +12,38 @@
 	            <a href="welcomehome"><span class="fa fa-home mr-3"></span> DashBoard</a>
 	          </li>
 	          <li>
-	              <a href="getAllUserInfoDetails"><span class="fa fa-user mr-3"></span> Manage User</a>
+	              <a href="getAllUserInfoDetails"><span class="fa fa-user mr-3"></span>Admin</a>
 	          </li>
 	          <li>
               <a href="viewPatientEntryPage"><span class="fa fa-briefcase mr-3"></span> Patient Entry</a>
 	          </li>
 	          <li>
-              <a href="#"><span class="fa fa-sticky-note mr-3"></span> Blog</a>
+              <a href="#"><span class="fa fa-sticky-note mr-3"></span> Account Overview</a>
 	          </li>
 	          <li>
-              <a href="#"><span class="fa fa-suitcase mr-3"></span> Gallery</a>
+              <a href="#"><span class="fa fa-suitcase mr-3"></span> Referral Manager</a>
+	          </li>
+	          <li>
+              <a href="#"><span class="fa fa-suitcase mr-3"></span>Patho/Radio - logist</a>
+              <li>
+              <a href="#"><span class="fa fa-suitcase mr-3"></span>Add OPD DR</a>
+	          </li>
+	          <li>
+              <a href="#"><span class="fa fa-suitcase mr-3"></span>Outsources</a>
+	          </li>
+	          <li>
+              <a href="#"><span class="fa fa-suitcase mr-3"></span>Management</a>
+	          </li>
+	          <li>
+              <a href="#"><span class="fa fa-suitcase mr-3"></span>Profile & Report</a>
+	          </li>
+	          <li>
+              <a href="#"><span class="fa fa-suitcase mr-3"></span>Add & Edit Profile</a>
 	          </li>
 	          <li>
               <a href="#"><span class="fa fa-cogs mr-3"></span> Services</a>
 	          </li>
-	          <li>
-              <a href="#"><span class="fa fa-paper-plane mr-3"></span> Contacts</a>
-	          </li>
+	          
 	          <li><i class="fas fa-sign-out-alt"></i>
               <a href="userLogout"><span class="fa fa-sign-out mr-3"></span>Logout</a>
 	          </li>
@@ -46,7 +61,7 @@
 
 	        <div class="footer">
 	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
 						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 	        </div>
 

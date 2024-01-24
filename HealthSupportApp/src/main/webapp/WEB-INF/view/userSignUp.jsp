@@ -77,7 +77,7 @@ $(function() {
                                 <div class="row register-form">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="user_name" placeholder="First Name *" value="" />
+                                            <input type="text" class="form-control" name="inst_name" placeholder="Institute Name *" value="" />
                                         </div>
                                         <div class="form-group">
                                             <input type="text" class="form-control" name="user_address" placeholder="Address *" value="" />
@@ -85,21 +85,18 @@ $(function() {
                                         <div class="form-group">
                                             <input type="password" class="form-control" name="user_password" placeholder="Password *" value="" />
                                         </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name ="is_active_user"  placeholder="Is Active User *" value="" />
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="maxl">
-                                                <label class="radio inline"> 
-                                                    <input type="radio" name="user_gender" value="male" checked>
-                                                    <span> Male </span> 
-                                                </label>
-                                                <label class="radio inline"> 
-                                                    <input type="radio" name="user_gender" value="female">
-                                                    <span>Female </span> 
-                                                </label>
-                                            </div>
-                                        </div>
+                                      
+                                         <div class="form-group">
+										 <select
+											id="organization" name="organization" class="form-control">
+											<option class="hidden"  selected disabled>Select Organization</option>
+											<option value="Hospital">Hospital</option>
+											<option value="Pharmacy">Pharmacy</option>
+											<option value="Other">Other</option>
+										</select>
+
+										</div>
+                                      
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
@@ -109,15 +106,11 @@ $(function() {
                                             <input type="text" minlength="10" maxlength="10" name="user_mob_no" class="form-control" placeholder="Your Phone *" value="" />
                                         </div>
                                         <div class="form-group">
-                                            <select class="form-control" name = "user_dept">
-                                                <option class="hidden"  selected disabled>Please select Department</option>
-                                                <option value="A1">A1</option>
-                                                <option value="A2">A2</option>
-                                                <option value="A3">A3</option>
+                                            <select class="form-control" name = "user_role">
+                                                <option class="hidden"  selected disabled>Select Role</option>
+                                                <option value="User">User</option>
+                                                <option value="Admin">Admin</option>
                                             </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control"  placeholder="User role id" value="" />
                                         </div>
                                         <input type="submit" class="btnRegister"  value="Register"/>
                                     </div>

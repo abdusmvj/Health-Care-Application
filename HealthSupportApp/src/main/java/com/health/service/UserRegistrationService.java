@@ -20,18 +20,17 @@ public class UserRegistrationService {
 	
  public UserRegistration saveUpdateUserDetails(UserRegistration userRegistration) {
 	
-   if(userRegistration.getUser_dept().equalsIgnoreCase("A1"))
+   if(userRegistration.getUser_role().equalsIgnoreCase("Admin"))
        {
        	userRegistration.setUser_role_id(1);
+       	userRegistration.setIs_active_user('Y');
        }
-   else if (userRegistration.getUser_dept().equalsIgnoreCase("A2"))
+   else if (userRegistration.getUser_role().equalsIgnoreCase("User"))
        {
        	userRegistration.setUser_role_id(2);
+       	userRegistration.setIs_active_user('N');
        }
-   else if (userRegistration.getUser_dept().equalsIgnoreCase("A3"))
-       {
-       	userRegistration.setUser_role_id(3);
-       }
+   
 			return userRegistrationRepository.save(userRegistration);
 		}
  public void deleteUserDetails(int user_id)

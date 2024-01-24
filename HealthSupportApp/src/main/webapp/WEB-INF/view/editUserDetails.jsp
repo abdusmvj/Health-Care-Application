@@ -39,11 +39,11 @@
                         </ul>
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                <h3 class="register-heading">Signup as a Employee</h3>
+                                <h3 class="register-heading">Update User Details</h3>
                                 <div class="row register-form">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="user_name" placeholder="First Name *" value="${userObj.user_name}" />
+                                            <input type="text" class="form-control" name="inst_name" placeholder="Institute Name *" value="${userObj.inst_name}" />
                                         </div>
                                         <div class="form-group">
                                             <input type="text" class="form-control" name="user_address" placeholder="Address *" value="${userObj.user_address}" />
@@ -54,18 +54,7 @@
                                         <div class="form-group">
                                             <input type="text" class="form-control" name ="is_active_user"  placeholder="Is Active User *" value="${userObj.is_active_user}" />
                                         </div>
-                                        <div class="form-group">
-                                            <div class="maxl">
-                                                <label class="radio inline"> 
-                                                    <input type="radio" name="user_gender" value="${userObj.user_gender}">
-                                                    <span> Male </span> 
-                                                </label>
-                                                <label class="radio inline"> 
-                                                    <input type="radio" name="user_gender" value="${userObj.user_gender}">
-                                                    <span>Female </span> 
-                                                </label>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
@@ -75,16 +64,13 @@
                                             <input type="text" minlength="10" maxlength="10" name="user_mob_no" class="form-control" placeholder="Your Phone *" value="${userObj.user_mob_no}" />
                                         </div>
                                         <div class="form-group">
-                                            <select class="form-control" name="user_dept" >
-                                                <option class="hidden"  selected disabled>Please select Department</option>
-                                                <option value="A1">A1</option>
-                                                <option value="A2">A2</option>
-                                                <option value="A3">A3</option>
+                                             <select class="form-control" name = "userObj.user_role">
+                                                <option class="hidden"  selected disabled>Select Role</option>
+                                                <option value="User">User</option>
+                                                <option value="Admin">Admin</option>
                                             </select>
                                         </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control"  placeholder="User role id" value="" />
-                                        </div>
+                                        
                                         <input type="submit" class="btnRegister"  value="Update"/>
                                     </div>
                                 </div>

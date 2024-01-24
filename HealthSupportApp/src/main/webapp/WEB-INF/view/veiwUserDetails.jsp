@@ -135,11 +135,11 @@
 					<thead>
 						<tr>
 
-							<th>UserName</th>
+							<th>Institute Name</th>
 							<th>User Email</th>
 							<th>User Mob</th>
 							<th>User Address</th>
-							<th>User Dept</th>
+							<th>User Role</th>
 							<th>Delete</th>
 							<th>Edit</th>
 						</tr>
@@ -147,11 +147,11 @@
 					<tbody>
 						<c:forEach var="user" items="${objListUserDetails}">
 							<tr>
-								<td>${user.user_name}</td>
+								<td>${user.inst_name}</td>
 								<td>${user.user_email}</td>
 								<td>${user.user_mob_no}</td>
 								<td>${user.user_address}</td>
-								<td>${user.user_dept}</td>
+								<td>${user.user_role}</td>
 								<td  style="text-align: center !important;"><a  href="/delete-user?user_id=${user.user_id}" onclick="deleteUserRow();"><span 
 										class="fa fa-trash"></span></a></td>
 								<td ><a href="/edit-user?user_id=${user.user_id}"><span 
