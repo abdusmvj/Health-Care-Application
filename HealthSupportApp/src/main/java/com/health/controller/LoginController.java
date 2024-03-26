@@ -2,21 +2,17 @@ package com.health.controller;
 
 import java.util.List;
 
-import javax.print.attribute.standard.Media;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.health.model.UserRegistration;
 import com.health.repository.LoginRepository;
+
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
 
 @Controller
 public class LoginController {
@@ -27,10 +23,12 @@ public class LoginController {
 	
 
 	@GetMapping("/login")
-	public String Welcome(HttpServletRequest request) {
+	public ModelAndView Welcome(HttpServletRequest request) {
 		System.out.println("hi Login Page----");
-		request.setAttribute("mode", "MODE_HOME");
-		return "signin";
+		ModelAndView modelAndView = new ModelAndView();
+		 modelAndView.setViewName("signin");
+		//request.setAttribute("mode", "MODE_HOME");
+		return modelAndView;
 	}
 	
 	@PostMapping("/userLogin")

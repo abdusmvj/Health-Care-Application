@@ -2,27 +2,21 @@ package com.health.controller;
 
 import java.util.List;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-import jakarta.validation.Valid;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.health.model.PatientAddress;
 import com.health.model.PatientDetails;
-import com.health.model.UserRegistration;
 import com.health.repository.PatientAddressRepo;
 import com.health.repository.PatientDetailsRepo;
-import com.health.service.PatientAddressService;
-import com.health.service.PatientDetailsService;
 
 @Controller
 public class PatientDetailsController {
@@ -39,7 +33,7 @@ public class PatientDetailsController {
 	PatientAddressRepo patientAddressRepo;
 
 	
-	@RequestMapping("/viewPatientEntryPage")
+	@GetMapping("/viewPatientEntryPage")
 	public String Welcomehome(HttpServletRequest request) {
 		System.out.println("hi controleer----");
 		//request.setAttribute("mode", "MODE_HOME");
@@ -69,7 +63,7 @@ public class PatientDetailsController {
 
 	}
 
-	@RequestMapping(path = "/getAllPatientInfo", produces = "application/json; charset=UTF-8")
+	@GetMapping(path = "/getAllPatientInfo", produces = "application/json; charset=UTF-8")
 	@ResponseBody
 	public List<PatientDetails> getAllPatientDetails() {
 		// 1st way to do
@@ -104,7 +98,7 @@ public class PatientDetailsController {
 		return "patient-details-view";
 	}
 
-	@RequestMapping("/delete-patient")
+	@PutMapping("/delete-patient")
 	public String deleteSpecificPatient(@RequestParam Long patineId, HttpServletRequest request) {
 		/// userRegistrationService.deleteUserDetails(patineId);
 		HttpSession session = request.getSession();

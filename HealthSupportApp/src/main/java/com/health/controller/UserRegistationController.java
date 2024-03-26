@@ -2,22 +2,14 @@ package com.health.controller;
 
 import java.util.List;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-
+import org.springframework.web.bind.annotation.*;
 import com.health.model.UserRegistration;
-import com.health.repository.UserRegistrationRepository;
 import com.health.service.UserRegistrationService;
 import com.health.util.SequenceNumberGenerator;
 
@@ -29,7 +21,7 @@ public class UserRegistationController {
 
 // @PostMapping
 
-	@RequestMapping("/signIn")
+	@GetMapping("/signIn")
 	public String Welcome(HttpServletRequest request) {
 		System.out.println("hi controleer----");
 		request.setAttribute("mode", "MODE_HOME");
@@ -37,7 +29,7 @@ public class UserRegistationController {
 		return "userSignUp";
 	}
 
-	@RequestMapping("/saveUserRegistration")
+	@PostMapping("/saveUserRegistration")
 	public String addEmpployee(UserRegistration userRegistration, HttpServletRequest request) {
 		System.out.println(" sequence Value :" + SequenceNumberGenerator.getNext());
 		System.out.println("Value is :" + userRegistration.getIs_active_user());
@@ -68,7 +60,7 @@ public class UserRegistationController {
 		return "veiwUserDetails";
 	}
 
-	@RequestMapping(path = "/getAllUserInfo", produces = "application/json; charset=UTF-8")
+	@GetMapping(path = "/getAllUserInfo", produces = "application/json; charset=UTF-8")
 	@ResponseBody
 	public List<UserRegistration> getAllUserDetails() {
 		// 1st way to do
@@ -80,7 +72,7 @@ public class UserRegistationController {
 		return listUserDetails;
 	}
 
-	@RequestMapping("/delete-user")
+	@PutMapping("/delete-user")
 	public String deleteUser(@RequestParam int user_id, HttpServletRequest request) {
 		userRegistrationService.deleteUserDetails(user_id);
 		// get all user details by call again all user details
@@ -92,14 +84,14 @@ public class UserRegistationController {
 		return "veiwUserDetails";
 	}
 
-	@RequestMapping("/edit-user")
+	@PostMapping("/edit-user")
 	public String updateUserDetails(@RequestParam int user_id, HttpServletRequest request) {
 		request.setAttribute("userObj", userRegistrationService.updateUserDetails(user_id));
 		request.setAttribute("mode", "MODE_UPDATE");
 		return "editUserDetails";
 	}
 
-	@RequestMapping("/updateUserDetails")
+	@PostMapping("/updateUserDetails")
 	public String registerUser(@ModelAttribute UserRegistration user, BindingResult bindingResult,
 			HttpServletRequest request) {
 		UserRegistration userRegistration = userRegistrationService.saveUpdateUserDetails(user);
