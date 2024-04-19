@@ -1,20 +1,20 @@
-<!DOCTYPE html>
+
 <html>
 <head>
 
 <title>Sign In</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="static/css/LoginCustom.css" rel="stylesheet">
-<link href="static/css/background_image.css" type="text/css" rel="stylesheet">
+<link href="resources/static/css/LoginCustom.css" rel="stylesheet">
+<link href="resources/static/css/background_image.css" type="text/css" rel="stylesheet">
 
 
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<script src="static/js/jquery-min-2.1.3.js" charset="utf-8"></script>
-<script src="static/js/bootstrap.min.js"></script>
-<script src="static/js/clockpicker/jquery-clockpicker.js"></script>
-<script src="static/js/clockpicker/bootstrap-clockpicker.js"></script>
-<script src="static/js/datepicker/Bootstrap_date_picker.js"></script>
+<script src="resources/static/js/jquery-min-2.1.3.js" charset="utf-8"></script>
+<script src="resources/static/js/bootstrap.min.js"></script>
+<script src="resources/static/js/clockpicker/jquery-clockpicker.js"></script>
+<script src="resources/static/js/clockpicker/bootstrap-clockpicker.js"></script>
+<script src="resources/static/js/datepicker/Bootstrap_date_picker.js"></script>
 <script>
 $(function() {
     console.log( "ready!" );

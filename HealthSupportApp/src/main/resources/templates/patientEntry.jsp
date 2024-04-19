@@ -13,13 +13,13 @@
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="static/css/welcome_custome.css">
+<link rel="stylesheet" href="resources/static/css/welcome_custome.css">
 
 
- <script src="static/js/jquery.min.js"></script>
+ <script src="resources/static/js/jquery.min.js"></script>
 
 
-<script src="static/js/bootstrap.min.js"></script>
+<script src="resources/static/js/bootstrap.min.js"></script>
 <script>
 	$(function() {
 

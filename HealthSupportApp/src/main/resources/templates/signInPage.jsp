@@ -1,4 +1,4 @@
-<link href="static/css/style.css" rel="stylesheet">
+<link href="resources/static/css/style.css" rel="stylesheet">
 <!-- Modal -->
 <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
   aria-hidden="true">

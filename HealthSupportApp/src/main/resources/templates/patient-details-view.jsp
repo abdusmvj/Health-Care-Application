@@ -7,16 +7,16 @@
 
 <!-- 	Bootstrap v2.3.2 -->
 
-<link rel="stylesheet" href="static/css/aws-bootstrap-2.3.2-min.css">
-<link rel="stylesheet" href="static/css/aws-jquery-dynatable.css">
-<link rel="stylesheet" href="static/css/welcome_custome.css">
-<link rel="stylesheet" href="static/css/common-custom.css">
+<link rel="stylesheet" href="resources/static/css/aws-bootstrap-2.3.2-min.css">
+<link rel="stylesheet" href="resources/static/css/aws-jquery-dynatable.css">
+<link rel="stylesheet" href="resources/static/css/welcome_custome.css">
+<link rel="stylesheet" href="resources/static/css/common-custom.css">
 <!--  jQuery v3.0.0-beta1 -->
-<script src="static/js/aws-jquery-beta-3.0.0.js"></script>
+<script src="resources/static/js/aws-jquery-beta-3.0.0.js"></script>
 <!-- JS Pluging -->
-<script src="static/js/aws-jquery-dynatable.js"></script>
+<script src="resources/static/js/aws-jquery-dynatable.js"></script>
 <!-- <script src="static/js/jquery.min.js"></script> -->
-<script src="static/js/bootstrap.min.js"></script>
+<script src="resources/static/js/bootstrap.min.js"></script>
 <script>
 	$(function() {
 		//for deleting user details

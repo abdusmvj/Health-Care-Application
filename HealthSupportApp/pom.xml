@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.health.app</groupId>
 	<artifactId>HealthSupportApp</artifactId>
-	<version>0.0.6-SNAPSHOT</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>HealthSupportApp</name>
 	<description>Health Organization Management</description>
@@ -35,7 +35,6 @@
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
-			<scope>provided</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-tomcat -->
 		<dependency>
@@ -51,47 +50,29 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		
-<!-- https://mvnrepository.com/artifact/javax.mail/javax.mail-api -->
- <dependency>
-    <groupId>jakarta.servlet</groupId>
-    <artifactId>jakarta.servlet-api</artifactId>
-    </dependency>
- <dependency>
+<dependency>
+  <groupId>jakarta.servlet.jsp.jstl</groupId>
+  <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+</dependency>
+
+<dependency>
     <groupId>com.mysql</groupId>
     <artifactId>mysql-connector-j</artifactId>
 </dependency>
 
-<dependency>
+ <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-thymeleaf</artifactId>
-</dependency>
+</dependency> 
 <!-- 		//  start abdus added this dependency  -->
 
      <dependency>
       <groupId>org.json</groupId>
       <artifactId>json</artifactId>
       <version>20180813</version>
-      <scope>compile</scope>
     </dependency>
-    <dependency>
-      <groupId>com.googlecode.jsontoken</groupId>
-      <artifactId>jsontoken</artifactId>
-      <version>1.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.google.api-client</groupId>
-      <artifactId>google-api-client-gson</artifactId>
-      <version>1.23.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.google.api-client</groupId>
-      <artifactId>google-api-client</artifactId>
-      <version>1.23.0</version>
-      <scope>compile</scope>
-    </dependency>
+    
+   
 <!-- 		end abdus added this dependency -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

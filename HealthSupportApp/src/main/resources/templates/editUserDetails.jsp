@@ -1,4 +1,4 @@
-<!DOCTYPE html >
+
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 <head>
@@ -6,7 +6,7 @@
 <meta http-equiv="Expires" content="Sun, 30 Mar 2020 00:00:00 GMT">
 <title>User Sing Up</title>
 
-<link href="static/css/Signup_custom.css" rel="stylesheet">
+<link href="resources/static/css/Signup_custom.css" rel="stylesheet">
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
