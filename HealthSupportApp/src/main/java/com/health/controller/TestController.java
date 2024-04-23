@@ -1,17 +1,21 @@
 package com.health.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import jakarta.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletRequest;
 
-@RestController
+@Controller
 public class TestController {
-	@GetMapping("/test2")
+	 @GetMapping("/test2")
+	//@RequestMapping("/test3")
 	public String test(HttpServletRequest request) {
 		System.out.println("hi new test call");
-		
-		return "Helow";
+		//request.setAttribute("mode", "MODE_HOME");
+		return "homejsp";
 	}
 
 }
